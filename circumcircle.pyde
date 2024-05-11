@@ -3,7 +3,7 @@ def setup():
     noFill()
 
 def m(a, b):
-    return (a[0]-b[0])/(a[1]-b[1])
+    return (a[0]-b[0]) / (a[1]-b[1])
 
 def v(a, b):
     return (a[0]**2 - b[0]**2 + a[1]**2 - b[1]**2) / (2*a[1] - 2*b[1])
@@ -35,15 +35,15 @@ def cir(a, b, c):
 points = set()
 
 def mouseClicked():
-    x,y = float(mouseX), float(mouseY)
-    points.add((x,y))
+    x, y = float(mouseX), float(mouseY)
+    points.add((x, y))
     circle(x, y, 10)
 
 def draw():
     if len(points) == 3:
         a, b, c = list(points)
         print('points:', a, b, c)
-        x_p, y_p, r = cir(a,b,c)
+        x_p, y_p, r = cir(a, b, c)
         print(x_p, y_p, r)
         circle(x_p, y_p, 2*r)
         points.clear()
