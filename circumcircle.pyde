@@ -28,7 +28,7 @@ def cir(a, b, c):
     y_p = -x_p * m_ab + v_ab
 
     # radius of circle
-    r = ((x_a - x_p)**2 + (y_a - y_p)**2)**(1/2)
+    r = ((x_a - x_p)**2 + (y_a - y_p)**2)**(0.5)
 
     return x_p, y_p, r
 
